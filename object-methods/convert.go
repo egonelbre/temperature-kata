@@ -1,6 +1,11 @@
 package temp
 
-type Temperature float64 // or fixnum
+type Temperature struct {
+	kelvin float64 // or fixnum
+}
+
+// alternatively
+// type Temperature float64
 
 func (temp *Temperature) SetFahrenheit(v float64)
 func (temp Temperature) Fahrenheit() float64
